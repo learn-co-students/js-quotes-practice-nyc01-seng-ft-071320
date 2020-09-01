@@ -96,6 +96,37 @@
     {
       "quoteId": 3,
       "id": 7
+    },
+    {
+      "likeObj": {
+        "quoteId": 2,
+        "createdAt": 1598938262740
+      },
+      "id": 8
+    },
+    {
+      "likeObj": {
+        "quoteId": 2,
+        "createdAt": 1598938265359
+      },
+      "id": 9
+    },
+    {
+      "likeObj": {
+        "quoteId": 2,
+        "createdAt": 1598938265809
+      },
+      "id": 10
+    },
+    {
+      "quoteId": 3,
+      "createdAt": 1598938310700,
+      "id": 11
+    },
+    {
+      "quoteId": 3,
+      "createdAt": 1598938311411,
+      "id": 12
     }
   ]
 }

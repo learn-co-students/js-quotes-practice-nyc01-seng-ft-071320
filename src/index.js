@@ -99,19 +99,20 @@ document.addEventListener("DOMContentLoaded", () => {
         likeCount++
 
         let quoteIdStr = button.parentElement.parentElement.id
-        let quoteId = parseInt(quoteIdStr)
+        let quoteIdNum = parseInt(quoteIdStr)
         button.innerText = `Likes: ${likeCount}`
 
-        // debugger
+        
+
         const options = {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
                 "Accept": "application/json"
             },
-        body: JSON.stringify({ quoteId: quoteId  })
+        body: JSON.stringify({ quoteId: quoteIdNum, createdAt: Date.now() })
         }
-        fetch(likeUrl)
+        fetch(likeUrl, options)
         .then(resp => resp.json())
         .then(success => console.log("Hooray!"))
     }
