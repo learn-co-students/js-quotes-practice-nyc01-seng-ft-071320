@@ -3,12 +3,11 @@ const qs = selector => document.querySelector(selector)
 const quoteList = qs('#quote-list')
 const sortBtn = ce('button')
 qs('body').children[1].prepend(sortBtn)
-sortBtn.textContent = 'unsort'
+sortBtn.textContent = 'sorted by id'
 sortBtn.className = 'btn-info'
 sortBtn.dataset.status = 'off'
 
 const listQuote = (quote) => {
-  // console.log(quote.likes.length)
   const li = ce('li')
   quoteList.append(li)
   li.dataset.quoteId = quote.id
@@ -40,6 +39,8 @@ const getQuotes = () => {
   fetch('http://localhost:3000/quotes?_embed=likes')
   .then(res => res.json())
   .then(quotes => quotes.forEach(listQuote))
+  // .then(quote => quote.sort(quote.author).forEach(listQuote))
+  // .then(quote => console.log(quote.sort(quote.author)))
 }
 
 const submitHandler = () => {
@@ -147,10 +148,10 @@ const editQuote = (target) => {
 const sortList = (target) => {
   if (target.dataset.status === 'off') {
     target.dataset.status = 'on'
-    target.textContent = 'sort'
+    target.textContent = 'sorted by author'
   } else {
     target.dataset.status = 'off'
-    target.textContent = 'unsort'
+    target.textContent = 'sorted by id'
   }
 }
 
