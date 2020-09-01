@@ -27,10 +27,6 @@ function render(quote){
     <button class='btn-success' data-id='${quote.id}'>Likes: <span>${quote.likes.length}</span></button>
     <button class='btn-danger'data-id='${quote.id}'>Delete</button>
     </blockquote>`
-    // let btns = document.querySelectorAll('button')
-    // btns.forEach(btn=>{
-    //     if (btn.className != "btn btn-primary"){btn.dataset.id=}
-    // })
 }//end of render
 
 function postMan(){
@@ -93,10 +89,8 @@ function clunker(){
                 ) //single vars object has brackets vs the entire object, which is bare
             })// This is the end of my fetch
             .then(res=>res.json()).then(result=>{
-                //console.log(result.quoteId)
-                //console.log(quoteId)
+                //console.log(result.quoteId) //console.log(quoteId) //console.log(result)
                 if (quoteId==result.quoteId){span.innerText=number}
-                //console.log(result)
                 })
             
         }
