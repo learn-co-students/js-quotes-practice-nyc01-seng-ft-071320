@@ -1,21 +1,6 @@
 {
   "quotes": [
     {
-      "id": 1,
-      "quote": "Expect nothing. Live frugally on surprise.",
-      "author": "Alice Walker"
-    },
-    {
-      "id": 2,
-      "quote": "Y’all is the best, most inclusive, second-person, plural pronoun in the English-speaking world.",
-      "author": "Hannah Gadsby"
-    },
-    {
-      "id": 3,
-      "quote": "today a man on the street pointed to me & said ‘what the hell is that!?’ i wanted to turn around, tell him that i got this dress on sale & i got this body for free but you have been making me pay for both ever since.",
-      "author": "Alok Vaid Menon"
-    },
-    {
       "id": 4,
       "quote": "You gain strength, courage and confidence by every experience in which you really stop to look fear in the face. You are able to say to yourself, 'I have lived through this horror. I can take the next thing that comes along.' You must do the thing you think you cannot do.",
       "author": "Eleanor Roosevelt"
@@ -54,18 +39,142 @@
       "id": 11,
       "quote": "The here and now is all we have, and if we play it right it's all we'll need.",
       "author": "Ann Richards"
+    },
+    {
+      "quote": "meow",
+      "author": "lisa",
+      "id": 12
+    },
+    {
+      "quote": "purr",
+      "author": "lisa",
+      "id": 13
+    },
+    {
+      "quote": "purr purr",
+      "author": "lisa",
+      "id": 14
+    },
+    {
+      "quote": "purr purr purr",
+      "author": "lisa",
+      "id": 15
+    },
+    {
+      "quote": "meow meow",
+      "author": "lisa",
+      "id": 16
+    },
+    {
+      "quote": "purr purr",
+      "author": "neko",
+      "id": 18
     }
   ],
   "likes": [
     {
-      "id": 1,
-      "quoteId": 1,
-      "createdAt": 1558524356
-    },
-    {
       "quoteId": 10,
       "id": 2,
       "createdAt": 1558524358
+    },
+    {
+      "quoteId": 4,
+      "id": 3
+    },
+    {
+      "quoteId": 4,
+      "createdAt": 1598933729670,
+      "id": 4
+    },
+    {
+      "quoteId": 4,
+      "createdAt": 1598933915753,
+      "id": 5
+    },
+    {
+      "quoteId": 4,
+      "createdAt": 1598933969808,
+      "id": 6
+    },
+    {
+      "quoteId": 4,
+      "createdAt": 1598933988709,
+      "id": 7
+    },
+    {
+      "quoteId": 4,
+      "createdAt": 1598934020496,
+      "id": 8
+    },
+    {
+      "quoteId": 5,
+      "createdAt": 1598934029269,
+      "id": 9
+    },
+    {
+      "quoteId": 6,
+      "createdAt": 1598934031564,
+      "id": 10
+    },
+    {
+      "quoteId": 7,
+      "createdAt": 1598934032989,
+      "id": 11
+    },
+    {
+      "quoteId": 7,
+      "createdAt": 1598934033686,
+      "id": 12
+    },
+    {
+      "quoteId": 7,
+      "createdAt": 1598934034387,
+      "id": 13
+    },
+    {
+      "quoteId": 8,
+      "createdAt": 1598934037336,
+      "id": 14
+    },
+    {
+      "quoteId": 18,
+      "createdAt": 1598936339640,
+      "id": 17
+    },
+    {
+      "quoteId": 18,
+      "createdAt": 1598936340089,
+      "id": 18
+    },
+    {
+      "quoteId": 18,
+      "createdAt": 1598936340497,
+      "id": 19
+    },
+    {
+      "quoteId": 18,
+      "createdAt": 1598936340978,
+      "id": 20
+    },
+    {
+      "quoteId": 16,
+      "createdAt": 1598936342397,
+      "id": 21
+    },
+    {
+      "quoteId": 16,
+      "createdAt": 1598936343010,
+      "id": 22
+    },
+    {
+      "quoteId": 4,
+      "createdAt": 1598937156558,
+      "id": 23
+    },
+    {
+      "quoteId": 4,
+      "createdAt": 1598965132563,
+      "id": 24
     }
   ]
 }
