@@ -37,12 +37,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function submitHandler(){
         document.addEventListener("submit", e => {
+            debugger
             e.preventDefault()
             const form = e.target
             console.log("Inside event listener")
             const quote = form.quote.value
             const author = form.author.value
-            form.reset()
+            // form.reset()
             sendCreateReq(quote, author)
         })
     }
@@ -102,8 +103,6 @@ document.addEventListener("DOMContentLoaded", () => {
         let quoteIdNum = parseInt(quoteIdStr)
         button.innerText = `Likes: ${likeCount}`
 
-        
-
         const options = {
             method: "POST",
             headers: {
@@ -118,7 +117,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 
+    
 getJson()
-submitHandler()
 clickHandler()
+submitHandler()
 })
