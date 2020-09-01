@@ -141,7 +141,7 @@ document.addEventListener("DOMContentLoaded", function(e){
                     console.log(formContainer)
                     formContainer.insertAdjacentHTML('beforeend',`
                     <form id="edit-quote-form">
-                      <label for="edit-quote">Edit Quote</label>
+                    <label for="edit-quote">Edit Quote</label>
                         <input name="quote" type="text" class="edit-quote" id="new-quote" placeholder="Update Quote">
                         <label for="Author">Author</label>
                         <input name="author" type="text" class="edit-author" id="author" placeholder="Update Author">
@@ -154,8 +154,34 @@ document.addEventListener("DOMContentLoaded", function(e){
                     let formContainer = document.querySelector('.form-container')
                     formContainer.innerText = ''
                     e.target.innerText = "Edit"
-
-   
+                }
+            }
+            else if (e.target.matches('.sort-bttn')){
+                if (e.target.innerText === "Sort By Author"){
+                    fetch(baseURL)
+                    .then(resp => resp.json())
+                    .then(data =>{
+                        function compare(a, b) {
+                            // Use toUpperCase() to ignore character casing
+                            const author1 = a.author.toUpperCase();
+                            const author2 = b.author.toUpperCase();
+                            let comparison = 0;
+                            if (author1 > author2) {
+                                comparison = 1;
+                            } else if (author1 < author2) {
+                                comparison = -1;
+                            } return comparison;
+                        }
+                        data.sort(compare)
+                        quoteList.innerHTML = ''
+                        renderQuotes(data)
+                        e.target.innerText = "Sort by ID"
+                    })
+                }
+                else if (e.target.innerText === "Sort by ID"){
+                    quoteList.innerHTML = ''
+                    getQuotes()
+                    e.target.innerText = "Sort by Author"
                 }
             }
         })
@@ -170,3 +196,4 @@ document.addEventListener("DOMContentLoaded", function(e){
 
 
 })
+
