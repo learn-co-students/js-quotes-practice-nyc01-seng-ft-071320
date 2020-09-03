@@ -6,11 +6,6 @@
       "author": "Audre Lorde"
     },
     {
-      "id": 9,
-      "quote": "Not everything that is faced can be changed, but nothing can be changed until it is faced.",
-      "author": "James Baldwin"
-    },
-    {
       "id": 10,
       "quote": "You know, failure hurts. Any kind of failure stings. If you live in the sting, you will undoubtedly fail. My way of getting past the sting is to say no, I’m just not going to let this get me down.",
       "author": "Sonia Sotomayor"
@@ -21,8 +16,8 @@
       "id": 11
     },
     {
-      "quote": "This is the only chance you got",
-      "author": "Eminem",
+      "quote": "jyffuy",
+      "author": "hgy",
       "id": 12
     }
   ],
@@ -45,16 +40,76 @@
       "id": 5
     },
     {
-      "quoteId": 12,
-      "id": 6
-    },
-    {
       "quoteId": 11,
       "id": 7
     },
     {
-      "quoteId": 9,
-      "id": 8
+      "quoteId": 6,
+      "id": 9
+    },
+    {
+      "quoteId": 11,
+      "id": 10
+    },
+    {
+      "quoteId": 11,
+      "id": 11
+    },
+    {
+      "quoteId": 11,
+      "id": 12
+    },
+    {
+      "quoteId": 11,
+      "id": 13
+    },
+    {
+      "quoteId": 11,
+      "id": 14
+    },
+    {
+      "quoteId": 11,
+      "id": 15
+    },
+    {
+      "quoteId": 11,
+      "id": 16
+    },
+    {
+      "quoteId": 11,
+      "id": 17
+    },
+    {
+      "quoteId": 11,
+      "id": 18
+    },
+    {
+      "quoteId": 12,
+      "id": 19
+    },
+    {
+      "quoteId": 12,
+      "id": 20
+    },
+    {
+      "quoteId": 12,
+      "id": 21
+    },
+    {
+      "quoteId": 12,
+      "id": 22
+    },
+    {
+      "quoteId": 12,
+      "id": 23
+    },
+    {
+      "quoteId": 12,
+      "id": 24
+    },
+    {
+      "quoteId": 12,
+      "id": 25
     }
   ]
 }
